@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-sftp-leapfroggr",
+  "version": "1.0.0",
+  "description": "sftp client plugin for uploading files to a sftp server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moribaleta/cordova-plugin-sftp-leapfroggr.git"
+  },
+  "keywords": [
+    "sftp"
+  ],
+  "author": "mori baleta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moribaleta/cordova-plugin-sftp-leapfroggr/issues"
+  },
+  "homepage": "https://github.com/moribaleta/cordova-plugin-sftp-leapfroggr#readme"
+}
