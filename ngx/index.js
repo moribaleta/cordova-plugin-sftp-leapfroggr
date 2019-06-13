@@ -52,7 +52,7 @@ define(["require", "exports", "@angular/core", "@ionic-native/core"], function (
          * @param arg2 {number} Another param to configure something
          * @return {Promise<any>} Returns a promise that resolves when something happens
          */
-        CordovaPluginSftpLeapfroggr.prototype.configure = function (options) {
+        CordovaPluginSftpLeapfroggr.prototype.configureSFTP = function (options) {
             return; // We add return; here to avoid any IDE / Compiler errors
         };
         CordovaPluginSftpLeapfroggr.prototype.upload = function (options) {
@@ -60,7 +60,7 @@ define(["require", "exports", "@angular/core", "@ionic-native/core"], function (
         };
         __decorate([
             core_2.Cordova()
-        ], CordovaPluginSftpLeapfroggr.prototype, "configure", null);
+        ], CordovaPluginSftpLeapfroggr.prototype, "configureSFTP", null);
         __decorate([
             core_2.Cordova()
         ], CordovaPluginSftpLeapfroggr.prototype, "upload", null);
@@ -68,7 +68,7 @@ define(["require", "exports", "@angular/core", "@ionic-native/core"], function (
             core_2.Plugin({
                 pluginName: 'CordovaPluginSftpLeapfroggr',
                 plugin: 'cordova-plugin-sftp-leapfroggr',
-                pluginRef: 'plugins.CordovaPluginSftpLeapfroggr',
+                pluginRef: 'cordova.plugins.CordovaPluginSftpLeapfroggr',
                 repo: 'https://github.com/moribaleta/cordova-plugin-sftp-leapfroggr',
                 install: '',
                 installVariables: [],

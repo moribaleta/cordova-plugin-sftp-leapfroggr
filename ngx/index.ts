@@ -36,7 +36,7 @@ import { Plugin, Cordova, IonicNativePlugin } from '@ionic-native/core';
 @Plugin({
   pluginName: 'CordovaPluginSftpLeapfroggr',
   plugin: 'cordova-plugin-sftp-leapfroggr', // npm package name, example: cordova-plugin-camera
-  pluginRef: 'plugins.CordovaPluginSftpLeapfroggr', // the variable reference to call the plugin, example: navigator.geolocation
+  pluginRef: 'cordova.plugins.CordovaPluginSftpLeapfroggr', // the variable reference to call the plugin, example: navigator.geolocation
   repo: 'https://github.com/moribaleta/cordova-plugin-sftp-leapfroggr', // the github repository URL for the plugin
   install: '', // OPTIONAL install command, in case the plugin requires variables
   installVariables: [], // OPTIONAL the plugin requires variables
@@ -52,7 +52,7 @@ export class CordovaPluginSftpLeapfroggr extends IonicNativePlugin {
    * @return {Promise<any>} Returns a promise that resolves when something happens
    */
   @Cordova()
-  configure(options: {}): Promise<any> {
+  configureSFTP(options: {}): Promise<any> {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
