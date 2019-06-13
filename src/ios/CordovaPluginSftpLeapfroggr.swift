@@ -33,7 +33,7 @@
         if let fileConfig = command.arguments[0] as? Dictionary<String,String> {
             if((sftp_config.host != nil) && (sftp_config.username != nil) && (sftp_config.password != nil)){
                 let filepath = fileConfig["filepath"]!.replacingOccurrences(of: "file://", with: "")
-                let tofilepath = "/\(sftp_config.destination_folder ?? "bpitest")/" + fileConfig["filename"]!
+                let tofilepath = "/\(sftp_config.destination_folder ?? "root")/" + fileConfig["filename"]!
                 let sftpFileConfig = SFTPFileConfig(localpath: filepath, destinationpath: tofilepath)
                 DispatchQueue(label: "file upload", qos: .background).async {
                     self.uploadFile(sftp_config: self.sftp_config, sftp_fileconfig: sftpFileConfig, callbackId: command.callbackId)

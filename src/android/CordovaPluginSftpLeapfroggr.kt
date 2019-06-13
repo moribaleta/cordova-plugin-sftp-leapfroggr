@@ -89,7 +89,7 @@ class CordovaPluginSftpLeapfroggr : CordovaPlugin() {
 
     private fun upload(fileconfig: JSONObject, callbackContext: CallbackContext) {
         if(this.sftpConfig != null){
-            val destinationpath = "/"+(this!!.sftpConfig?.destination_folder ?: "bpitest")+"/"+fileconfig.getString("filename")
+            val destinationpath = "/"+(this!!.sftpConfig?.destination_folder ?: "root")+"/"+fileconfig.getString("filename")
             val localpath = fileconfig.getString("filepath").replace("file://","")
 
             val sftpFileConfig = SFTPFileConfig(localpath, destinationpath)
