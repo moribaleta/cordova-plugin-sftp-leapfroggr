@@ -1,0 +1,19 @@
+{
+    "name": "CordovaPluginSftpLeapfroggr",
+    "version": "0.0.1",
+    "description": "Sftp Plugin for Cordova by Leapfroggr",
+    "cordova": {
+      "id": "cordova-plugin-sftp-leapfroggr",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "keywords": [
+      "ecosystem:cordova",
+      "cordova-android",
+      "cordova-ios"
+    ],
+    "author": "Gabriel Mori Baleta",
+    "license": "MIT License"
+  }
