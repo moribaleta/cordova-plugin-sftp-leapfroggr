@@ -5,7 +5,7 @@ works on both:
 * Android
 
 ### Installation
-* `npm install cordova-plugin-sftp-leapfroggr --save`
+* `npm install ionic-native-sftp-leapfroggr --save`
 * `cordova plugin add cordova-plugin-sftp-leapfroggr/cordova`
 
 - #### IOS
